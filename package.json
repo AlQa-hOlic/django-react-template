@@ -15,7 +15,8 @@
     "lint:fix": "eslint ./web --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "yarn lint:format && yarn lint:fix ",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@types/react": "^18.0.21",
@@ -24,6 +25,7 @@
     "@typescript-eslint/parser": "^5.40.0",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
