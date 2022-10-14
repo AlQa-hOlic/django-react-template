@@ -1,0 +1,6 @@
+__pycache__
+node_modules
+staticfiles
+venv
+web/dist
+db.sqlite3
